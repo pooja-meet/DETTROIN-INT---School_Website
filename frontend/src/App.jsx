@@ -3,6 +3,8 @@ import Navbar from './Component/Navbar/Navbar'
 import Home from './Component/Home/Home'
 import Login from './Component/Auth/Login'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import Footer from './Component/Footer/Footer'
+import About from './Component/About/About'
 const router = createBrowserRouter([
   {
     path: '/',
@@ -10,7 +12,17 @@ const router = createBrowserRouter([
     children: [
       {
         index: "#",
-        element: <Home />
+        element: <>
+          <Home />
+          <Footer />
+        </>
+      },
+      {
+        path: 'about',
+        element:
+          <>
+            <About />
+            <Footer /></>
       }
     ]
   },

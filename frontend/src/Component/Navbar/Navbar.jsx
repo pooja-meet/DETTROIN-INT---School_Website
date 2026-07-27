@@ -38,7 +38,7 @@ export default function Navbar() {
 
                         {activeMenu === "about" && (
                             <ul className="dropdown-menu">
-                                <li><Link to="#">Overview</Link></li>
+                                <li><Link to="overview">Overview</Link></li>
                                 <li><Link to="#">CBSE & School Policies</Link></li>
                                 <li><Link to="#">School Managing Committee</Link></li>
                                 <li><Link to="#">Blog</Link></li>
