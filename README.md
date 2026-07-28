@@ -86,6 +86,11 @@ https://dettroin-int-school-website-psi.vercel.app
 ## 👩‍💻 Developer
 
 Developed by **Pooja Rawat**
+📧 Email: pmrawat10@gmail.com
+
+🐙 GitHub: https://github.com/pooja-meet
+
+🌐 Portfolio: https://itsdev13.netlify.app
 
 ---
 
