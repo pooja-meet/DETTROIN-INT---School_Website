@@ -377,3 +377,23 @@
         gap: 10px;
     }
 }
+
+@media(max-width:375px) {
+    .action-card h2 {
+        font-size: 18px;
+    }
+
+    .action-card p {
+        font-size: 15px;
+
+    }
+    .action-icon{
+        font-size: 19px;
+    }
+     .footer-bottom ul {
+        flex-direction: row;
+    }
+    .footer-bottom ul li a{
+        font-size: 12px;
+    }
+}

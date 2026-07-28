@@ -611,19 +611,29 @@
     }
 
     .section5-left h1 {
-        font-size: 28px;
+        font-size: 25px;
     }
 
     .section5-border {
         padding-left: 15px;
     }
 
-    .section5-tag {
-        width: 270px;
-        font-size: 10px;
+    .section5-border h3 {
+        font-size: 20px;
     }
 
-    .section5 button {
-        width: 100%;
+    .section5-tag {
+        width: 285px;
+        font-size: 12px;
     }
+
+
+    .section5 button {
+        width: 60%;
+        font-size: 15px;
+        padding: 14px 14px;
+    }
+
+  
+   
 }
