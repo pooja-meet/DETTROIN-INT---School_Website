@@ -359,3 +359,266 @@
     }
 
 }
+
+/* =========================
+        992px
+========================= */
+
+@media (max-width:992px) {
+
+    /* Hero */
+
+    .hero {
+        min-height: auto;
+        padding: 80px 20px;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+    }
+
+    .left h1 {
+        font-size: 45px;
+    }
+
+    .right img {
+        width: 80%;
+    }
+
+    /* Section 3 */
+
+    .section3-container {
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+
+    .section3-left,
+    .section3-right {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Section 4 */
+
+    .management-card,
+    .reverse {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section4-content p {
+        text-align: left;
+    }
+
+    /* Section 5 */
+
+    .section5-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .section5-left,
+    .section5-right {
+        width: 100%;
+    }
+
+    .section5-right img {
+        width: 80%;
+    }
+}
+
+/* =========================
+        768px
+========================= */
+
+@media (max-width:768px) {
+
+    .hero {
+        padding: 60px 15px;
+    }
+
+    .left h1 {
+        font-size: 35px;
+        line-height: 1.3;
+    }
+
+    .left h3 {
+        font-size: 22px;
+    }
+
+    .left button {
+        padding: 12px 28px;
+    }
+
+    .right img {
+        width: 100%;
+    }
+
+    /* Swiper */
+
+    .title {
+        font-size: 26px;
+    }
+
+    .item {
+        padding: 25px 15px;
+    }
+
+    .item h1 {
+        font-size: 28px;
+    }
+
+    .icon {
+        font-size: 35px;
+    }
+
+    /* Section 3 */
+
+    .section3 {
+        padding: 60px 20px;
+    }
+
+    .section3-left h1 {
+        font-size: 32px;
+    }
+
+    .section3-left p {
+        font-size: 16px;
+    }
+
+    /* Section 4 */
+
+    .section4 {
+        padding: 60px 20px;
+    }
+
+    .section4-title {
+        font-size: 32px;
+    }
+
+    .section4-content h2 {
+        font-size: 28px;
+    }
+
+    .section4-image img {
+        margin: auto;
+    }
+
+    .section4-content h4 {
+        font-size: 20px;
+    }
+
+    /* Section 5 */
+
+    .section5 {
+        padding: 70px 20px;
+    }
+
+    .section5-left h1 {
+        font-size: 34px;
+    }
+
+    .section5-border h3 {
+        font-size: 22px;
+    }
+
+    .section5-right img {
+        width: 100%;
+        margin: auto;
+    }
+    
+    .section5-left h1 {
+        font-size: 28px;
+    }
+
+    .section5-border {
+        padding-left: 15px;
+    }
+
+    .section5 button {
+        width: 100%;
+    }
+}
+
+/* =========================
+        480px
+========================= */
+
+@media (max-width:480px) {
+
+    .hero {
+        padding: 50px 15px;
+    }
+
+    .campus {
+        font-size: 14px;
+    }
+
+    .left h1 {
+        font-size: 28px;
+    }
+
+    .left h3 {
+        font-size: 18px;
+    }
+
+    .left button {
+        width: 100%;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+
+    .item {
+        padding: 20px 10px;
+    }
+
+    .item h1 {
+        font-size: 24px;
+    }
+
+    .item p {
+        font-size: 15px;
+    }
+
+    .section3-left h1 {
+        font-size: 26px;
+    }
+
+    .section3-left button {
+        width: 100%;
+    }
+
+    .section4-title {
+        font-size: 26px;
+    }
+
+    .section4-content h2 {
+        font-size: 24px;
+    }
+
+    .section4-content h4 {
+        font-size: 18px;
+    }
+
+    .section5-left h1 {
+        font-size: 28px;
+    }
+
+    .section5-border {
+        padding-left: 15px;
+    }
+
+    .section5 button {
+        width: 100%;
+    }
+}
