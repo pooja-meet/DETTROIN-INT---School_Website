@@ -534,7 +534,7 @@
         width: 100%;
         margin: auto;
     }
-    
+
     .section5-left h1 {
         font-size: 28px;
     }
@@ -616,6 +616,11 @@
 
     .section5-border {
         padding-left: 15px;
+    }
+
+    .section5-tag {
+        width: 270px;
+        font-size: 10px;
     }
 
     .section5 button {
