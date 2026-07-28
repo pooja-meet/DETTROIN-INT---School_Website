@@ -5,8 +5,11 @@ import Login from './Component/Auth/Login'
 import Infrastructure from './Component/Infrastructure/Infrastructure'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Footer from './Component/Footer/Footer'
-import About from './Component/About/About'
 import BeyondAcademic from './Component/BeyondAcademic/BeyondAcademic'
+import Overview from './Component/About/Overview'
+import CBSEPolicy from './Component/About/CBSEPolicy'
+import SchoolCommittee from './Component/About/SchoolCommittee'
+import Blog from './Component/About/Blog'
 const router = createBrowserRouter([
   {
     path: '/',
@@ -20,11 +23,40 @@ const router = createBrowserRouter([
         </>
       },
       {
-        path: 'about',
-        element:
+        path: "overview",
+        element: (
           <>
-            <About />
-            <Footer /></>
+            <Overview />
+            <Footer />
+          </>
+        )
+      },
+      {
+        path: "cbse-policy",
+        element: (
+          <>
+            <CBSEPolicy />
+            <Footer />
+          </>
+        )
+      },
+      {
+        path: "school-committee",
+        element: (
+          <>
+            <SchoolCommittee />
+            <Footer />
+          </>
+        )
+      },
+      {
+        path: "blog",
+        element: (
+          <>
+            <Blog />
+            <Footer />
+          </>
+        )
       }, {
         path: 'beyond-academic/',
         element: <>

@@ -39,10 +39,10 @@ export default function Navbar() {
 
                         {activeMenu === "about" && (
                             <ul className="dropdown-menu">
-                                <li><Link to="overview">Overview</Link></li>
-                                <li><Link to="#">CBSE & School Policies</Link></li>
-                                <li><Link to="#">School Managing Committee</Link></li>
-                                <li><Link to="#">Blog</Link></li>
+                                <li><Link to="/overview">Overview</Link></li>
+                                <li><Link to="/cbse-policy">CBSE & School Policies</Link></li>
+                                <li><Link to="/school-committee">School Managing Committee</Link></li>
+                                <li><Link to="/blog">Blog</Link></li>
 
                             </ul>
                         )}
@@ -65,12 +65,12 @@ export default function Navbar() {
                         )}
                     </li>
 
-                    <li><Link smooth to="/beyond-academic/" onClick={() =>
+                    <li><HashLink smooth to="/beyond-academic/" onClick={() =>
                         window.scrollTo({
                             top: 0,
                             behavior: "smooth",
                         })
-                    }>Beyond Academics</Link></li>
+                    }>Beyond Academics</HashLink></li>
 
                     <li><Link to="/infrastructure/" onClick={() =>
                         window.scrollTo({
