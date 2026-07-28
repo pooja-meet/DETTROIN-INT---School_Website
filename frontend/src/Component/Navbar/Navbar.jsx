@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { HashLink } from "react-router-hash-link";
 import { Link, Outlet } from "react-router-dom";
 import { FaUser } from "react-icons/fa";
 import { FaBars, FaTimes } from "react-icons/fa";
@@ -64,9 +65,19 @@ export default function Navbar() {
                         )}
                     </li>
 
-                    <li><Link to="#">Beyond Academics</Link></li>
+                    <li><Link smooth to="/beyond-academic/" onClick={() =>
+                        window.scrollTo({
+                            top: 0,
+                            behavior: "smooth",
+                        })
+                    }>Beyond Academics</Link></li>
 
-                    <li><Link to="#">Infrastructure</Link></li>
+                    <li><Link to="/infrastructure/" onClick={() =>
+                        window.scrollTo({
+                            top: 0,
+                            behavior: "smooth",
+                        })
+                    }>Infrastructure</Link></li>
 
                     <li
                         className="dropdown"
@@ -87,7 +98,9 @@ export default function Navbar() {
                         )}
                     </li>
 
-                    <li><Link to="#">Contact Us</Link></li>
+                    <li><HashLink smooth to="/#contact">
+                        Contact Us
+                    </HashLink></li>
 
                     <li
                         className="dropdown"
@@ -104,7 +117,12 @@ export default function Navbar() {
                         )}
                     </li>
 
-                    <li><Link to="#">Hostel</Link></li>
+                    <li><Link to="#" onClick={() =>
+                        window.scrollTo({
+                            top: 0,
+                            behavior: "smooth",
+                        })
+                    }>Hostel</Link></li>
                 </ul>
 
                 <Link to="/login" className="login-btn">

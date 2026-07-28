@@ -1,7 +1,7 @@
 import React from 'react'
 import './Footer.css'
 import { Link } from 'react-router-dom'
-import {  FaArrowAltCircleRight, FaDownload} from 'react-icons/fa'
+import { FaArrowAltCircleRight, FaDownload } from 'react-icons/fa'
 import img8 from '../../assets/schoolImages/Link-Logo-→-Pavna-School-Logo.webp'
 
 export default function Footer() {
@@ -45,7 +45,7 @@ export default function Footer() {
 
                 </div>
             </section>
-            <section className="section7">
+            <section id='contact' className="section7">
                 <div className="section7-container">
 
                     {/* Top Row */}
