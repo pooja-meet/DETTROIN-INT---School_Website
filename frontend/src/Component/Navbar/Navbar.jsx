@@ -58,8 +58,8 @@ export default function Navbar() {
 
                         {activeMenu === 'academics' && (
                             <ul className="dropdown-menu">
-                                <li><Link to="#">Faculty</Link></li>
-                                <li><Link to="#">Assessment & Evaluation Policy </Link></li>
+                                <li><Link to="/faculty">Faculty</Link></li>
+                                <li><Link to="/assessment-evaluation-policy">Assessment & Evaluation Policy </Link></li>
 
                             </ul>
                         )}

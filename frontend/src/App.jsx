@@ -10,6 +10,8 @@ import Overview from './Component/About/Overview'
 import CBSEPolicy from './Component/About/CBSEPolicy'
 import SchoolCommittee from './Component/About/SchoolCommittee'
 import Blog from './Component/About/Blog'
+import Faculty from './Component/Academics/Faculty'
+import Assessment from './Component/Academics/Assessment'
 const router = createBrowserRouter([
   {
     path: '/',
@@ -57,6 +59,19 @@ const router = createBrowserRouter([
             <Footer />
           </>
         )
+      },
+
+      {
+        path: 'faculty',
+        element: <>
+          <Faculty />
+          <Footer />
+        </>
+      }, {
+        path: "assessment-evaluation-policy",
+        element: <>
+          <Assessment />
+          <Footer /></>
       }, {
         path: 'beyond-academic/',
         element: <>
