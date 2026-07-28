@@ -1,6 +1,6 @@
 import React from 'react'
 import img1 from '../../assets/schoolImages/Aligarh-scaled.webp'
-import './academic.css'
+import './academic.css';
 
 export default function Assessment() {
     return (

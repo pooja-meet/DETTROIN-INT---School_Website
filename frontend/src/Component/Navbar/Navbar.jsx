@@ -10,6 +10,9 @@ import "./Navbar.css";
 export default function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
     const [activeMenu, setActiveMenu] = useState("");
+    const handleNavigate = () => {
+        window.scrollTo(0, 0);
+    };
     return (
         <>
             <nav className="navbar">
@@ -39,10 +42,10 @@ export default function Navbar() {
 
                         {activeMenu === "about" && (
                             <ul className="dropdown-menu">
-                                <li><Link to="/overview">Overview</Link></li>
-                                <li><Link to="/cbse-policy">CBSE & School Policies</Link></li>
-                                <li><Link to="/school-committee">School Managing Committee</Link></li>
-                                <li><Link to="/blog">Blog</Link></li>
+                                <li><Link to="/overview" onClick={handleNavigate}>Overview</Link></li>
+                                <li><Link to="/cbse-policy" onClick={handleNavigate}>CBSE & School Policies</Link></li>
+                                <li><Link to="/school-committee" onClick={handleNavigate}>School Managing Committee</Link></li>
+                                <li><Link to="/blog" onClick={handleNavigate}>Blog</Link></li>
 
                             </ul>
                         )}
@@ -58,26 +61,17 @@ export default function Navbar() {
 
                         {activeMenu === 'academics' && (
                             <ul className="dropdown-menu">
-                                <li><Link to="/faculty">Faculty</Link></li>
-                                <li><Link to="/assessment-evaluation-policy">Assessment & Evaluation Policy </Link></li>
+                                <li><Link to="/faculty" onClick={handleNavigate}>Faculty</Link></li>
+                                <li><Link to="/assessment-evaluation-policy" onClick={handleNavigate}>Assessment & Evaluation Policy </Link></li>
 
                             </ul>
                         )}
                     </li>
 
-                    <li><HashLink smooth to="/beyond-academic/" onClick={() =>
-                        window.scrollTo({
-                            top: 0,
-                            behavior: "smooth",
-                        })
+                    <li><HashLink smooth to="/beyond-academic/" onClick={handleNavigate
                     }>Beyond Academics</HashLink></li>
 
-                    <li><Link to="/infrastructure/" onClick={() =>
-                        window.scrollTo({
-                            top: 0,
-                            behavior: "smooth",
-                        })
-                    }>Infrastructure</Link></li>
+                    <li><Link to="/infrastructure/" onClick={handleNavigate}>Infrastructure</Link></li>
 
                     <li
                         className="dropdown"
@@ -88,12 +82,12 @@ export default function Navbar() {
                         </Link>
                         {activeMenu === 'admission' && (
                             <ul className="dropdown-menu">
-                                <li><Link to="#">Admission Process</Link></li>
-                                <li><Link to="#">Apply Online</Link></li>
-                                <li><Link to="#">Interaction Syllabus</Link></li>
-                                <li><Link to="#">Fee Structure</Link></li>
-                                <li><Link to="#">Enquiry</Link></li>
-                                <li><Link to="#">FAQ</Link></li>
+                                <li><Link to="#" onClick={handleNavigate}>Admission Process</Link></li>
+                                <li><Link to="#" onClick={handleNavigate}>Apply Online</Link></li>
+                                <li><Link to="#" onClick={handleNavigate}>Interaction Syllabus</Link></li>
+                                <li><Link to="#" onClick={handleNavigate}>Fee Structure</Link></li>
+                                <li><Link to="#" onClick={handleNavigate}>Enquiry</Link></li>
+                                <li><Link to="#" onClick={handleNavigate}>FAQ</Link></li>
                             </ul>
                         )}
                     </li>
@@ -111,18 +105,13 @@ export default function Navbar() {
                         </Link>
                         {activeMenu === 'alumni' && (
                             <ul className="dropdown-menu">
-                                <li><Link to="#">Alumni Login</Link></li>
-                                <li><Link to="#">Profile Display</Link></li>
+                                <li><Link to="#" onClick={handleNavigate}>Alumni Login</Link></li>
+                                <li><Link to="#" onClick={handleNavigate}>Profile Display</Link></li>
                             </ul>
                         )}
                     </li>
 
-                    <li><Link to="#" onClick={() =>
-                        window.scrollTo({
-                            top: 0,
-                            behavior: "smooth",
-                        })
-                    }>Hostel</Link></li>
+                    <li><Link to="#" onClick={handleNavigate}>Hostel</Link></li>
                 </ul>
 
                 <Link to="/login" className="login-btn">

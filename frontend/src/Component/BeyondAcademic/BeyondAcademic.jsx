@@ -29,7 +29,7 @@ export default function BeyondAcademic() {
             >
                 <div className="overlay"></div>
 
-                <div className="hero-content">
+                <div className="beyond-content">
                     <h1>Beyond Academics</h1>
                 </div>
             </section>

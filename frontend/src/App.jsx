@@ -18,7 +18,7 @@ const router = createBrowserRouter([
     element: <Navbar />,
     children: [
       {
-        index: "true",
+        index: true,
         element: <>
           <Home />
           <Footer />
