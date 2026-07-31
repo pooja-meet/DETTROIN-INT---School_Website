@@ -82,12 +82,12 @@ export default function Navbar() {
                         </Link>
                         {activeMenu === 'admission' && (
                             <ul className="dropdown-menu">
-                                <li><Link to="#" onClick={handleNavigate}>Admission Process</Link></li>
+                                <li><Link to="/admission-process" onClick={handleNavigate}>Admission Process</Link></li>
                                 <li><Link to="#" onClick={handleNavigate}>Apply Online</Link></li>
                                 <li><Link to="#" onClick={handleNavigate}>Interaction Syllabus</Link></li>
                                 <li><Link to="#" onClick={handleNavigate}>Fee Structure</Link></li>
                                 <li><Link to="#" onClick={handleNavigate}>Enquiry</Link></li>
-                                <li><Link to="#" onClick={handleNavigate}>FAQ</Link></li>
+                                <li><Link to="/faq" onClick={handleNavigate}>FAQ</Link></li>
                             </ul>
                         )}
                     </li>
@@ -111,7 +111,7 @@ export default function Navbar() {
                         )}
                     </li>
 
-                    <li><Link to="#" onClick={handleNavigate}>Hostel</Link></li>
+                    <li><Link to="/hotel" onClick={handleNavigate}>Hostel</Link></li>
                 </ul>
 
                 <Link to="/login" className="login-btn">

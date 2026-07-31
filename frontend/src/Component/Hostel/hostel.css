@@ -1,0 +1,77 @@
+.hotel-hero {
+    min-height: 70vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+}
+
+.hotel-content {
+    position: relative;
+    z-index: 2;
+    width: 50%;
+    margin-right: 50%;
+    max-width: 1000px;
+    text-align: left;
+    color: #fff;
+}
+
+.hotel-content h1 {
+    font-size: 50px;
+    text-align: left;
+    color: orange;
+    margin-bottom: 35px;
+}
+
+.hotel-content p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+@media(max-width:768px) {
+
+    .hotel-hero {
+        min-height: auto;
+        padding: 70px 20px;
+    }
+
+    .hotel-content h1 {
+        font-size: 36px;
+    }
+
+    .hotel-content p {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+}
+
+@media (max-width:375px) {
+    .hotel-hero {
+        min-height: auto;
+        padding: 70px 20px;
+    }
+
+    .hotel-content {
+        width: 100%;
+        margin-right: 0%;
+        max-width: 1000px;
+    }
+
+    .hotel-content h1 {
+        font-size: 28px;
+    }
+
+    .hotel-content p {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+}

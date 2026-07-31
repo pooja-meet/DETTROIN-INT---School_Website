@@ -1,7 +1,6 @@
 import React from 'react'
 import Navbar from './Component/Navbar/Navbar'
 import Home from './Component/Home/Home'
-import Login from './Component/Auth/Login'
 import Infrastructure from './Component/Infrastructure/Infrastructure'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Footer from './Component/Footer/Footer'
@@ -12,6 +11,9 @@ import SchoolCommittee from './Component/About/SchoolCommittee'
 import Blog from './Component/About/Blog'
 import Faculty from './Component/Academics/Faculty'
 import Assessment from './Component/Academics/Assessment'
+import Hostel from './Component/Hostel/Hostel'
+import './App.css'
+import Addmission from './Component/Admission/AddmissionProcess/Addmission'
 const router = createBrowserRouter([
   {
     path: '/',
@@ -86,12 +88,20 @@ const router = createBrowserRouter([
           <Footer />
         </>
       },
+      {
+        path: 'admission-process',
+        element: <>
+          <Addmission />
+          <Footer /></>
+      }, {
+        path: "hotel",
+        element: <>
+          <Hostel />
+          <Footer />
+        </>
+      }
 
     ]
-  },
-  {
-    path: '/login',
-    element: <Login />
   }
 ])
 const App = () => {
