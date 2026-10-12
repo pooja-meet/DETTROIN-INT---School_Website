@@ -1,16 +1,97 @@
-# React + Vite
+# 🎓 Pavna School Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and fully responsive school website built using React.js. The website provides information about the school, academics, management, admissions, campus, and more with a clean and user-friendly interface.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Responsive Design
+- Modern UI/UX
+- Hero Section
+- School Overview
+- Management Section
+- Legacy Statistics Slider
+- Admission Banner
+- Footer with Campus Details
+- React Router Navigation
+- Swiper Slider
+- Optimized Images
 
-## React Compiler
+## 🛠️ Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React.js
+- React Router DOM
+- Swiper.js
+- React Icons
+- CSS3
 
-## Expanding the ESLint configuration
+## 📁 Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+src/
+│── assets/
+│── components/
+│── pages/
+│── layouts/
+│── App.jsx
+│── main.jsx
+```
+
+## ⚙️ Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/your-username/pavna-school.git
+```
+
+Go to project directory
+
+```bash
+cd pavna-school
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Run the development server
+
+```bash
+npm run dev
+```
+
+Build for production
+
+```bash
+npm run build
+```
+
+## 📱 Responsive
+
+- Desktop
+- Tablet
+- Mobile
+
+## 📸 Screenshots
+
+<img width="1882" height="906" alt="image" src="https://github.com/user-attachments/assets/89d4a1e5-bde0-4404-ae76-6987fffd10c6" />
+
+
+## 🌐 Live Demo
+
+https://dettroin-int-school-website-psi.vercel.app
+
+## 👩‍💻 Developer
+
+Developed by **Pooja Rawat**
+📧 Email: pmrawat10@gmail.com
+
+🐙 GitHub: https://github.com/pooja-meet
+
+🌐 Portfolio: https://itsdev13.netlify.app
+
+---
+
+⭐ If you like this project, don't forget to star the repository.
